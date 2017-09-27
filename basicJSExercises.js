@@ -13,13 +13,12 @@ Output:
  --------------------------- */
 
 function areaTriangle(base, height) {
-  return "No code yet";
+  return 0.5 * base * height;
 }
 console.log("Triangle Area Calculator:");
-/* Uncomment the following to check */
-  // console.log(areaTriangle(2, 7));
-  // console.log(areaTriangle(20, 56.5));
-  // console.log(areaTriangle(50, 34));
+   console.log(areaTriangle(2, 7));
+   console.log(areaTriangle(20, 56.5));
+   console.log(areaTriangle(50, 34));
 
 
 
@@ -45,12 +44,15 @@ HINT: Use substring()
 
 function rotate_string(text) {
   console.log(text);
+  for(var i = 0; i < text.length; i++)
+    text = text.substring(1, text.length) + text[0];
+    console.log(text);
 }
 
 console.log("Rotate String:");
 /* Uncomment the following to check */
-  //rotate_string("cat");
-  //rotate_string("voracious")
+  rotate_string("cat");
+  rotate_string("voracious")
 
 
 
@@ -77,8 +79,8 @@ function protect_email(email) {
 
 console.log("Protected email:");
 /* Uncomment the following to check */
-  //console.log(protect_email("harry_potter@gmail.com"));
-  //console.log(protect_email("sarah.connor@gmail.com"));
+  console.log(protect_email("harry_potter@gmail.com"));
+  console.log(protect_email("sarah.connor@gmail.com"));
 
 
 
